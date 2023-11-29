@@ -1,0 +1,32 @@
+<linker>
+	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="MultiplayerLevelManager">
+			<method name="LeaveGame"/>
+		</type>
+		<type fullname="MultiplayerLobby">
+			<method name="ActivatePanel"/>
+			<method name="ActivatePanel"/>
+			<method name="CreateRoom"/>
+			<method name="DisconnectButtonClicked"/>
+			<method name="LeaveLobbyClicked"/>
+			<method name="LeaveRoom"/>
+			<method name="ListRoomsClicked"/>
+			<method name="LoginButtonClicked"/>
+			<method name="OnJoinRandomRoomClicked"/>
+			<method name="StartGameClicked"/>
+		</type>
+		<type fullname="RoomEntry">
+			<method name="JoinRoom"/>
+			<method name="JoinRoom"/>
+		</type>
+		<type fullname="SceneManager">
+			<method name="LoadScene"/>
+			<method name="LoadScene"/>
+		</type>
+	</assembly>
+	<assembly fullname="UnityEngine.CoreModule" ignoreIfMissing="1">
+		<type fullname="UnityEngine.GameObject">
+			<method name="SetActive"/>
+		</type>
+	</assembly>
+</linker>
