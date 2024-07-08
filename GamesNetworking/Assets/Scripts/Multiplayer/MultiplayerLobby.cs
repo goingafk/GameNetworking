@@ -15,6 +15,7 @@ public class MultiplayerLobby : MonoBehaviourPunCallbacks
     public Transform CreateRoomPanel;
     public Transform InsideRoomPanel;
     public Transform ListRoomsPanel;
+    public Transform chatPanel;
 
     public InputField playerNameInput;
     string playerName;
@@ -31,7 +32,8 @@ public class MultiplayerLobby : MonoBehaviourPunCallbacks
     public Transform listRoomPanelContent;
 
     Dictionary<string, RoomInfo> cachedRoomList;
-    
+
+    public Chat chat;
     
     private void Start()
     {
@@ -51,7 +53,9 @@ public class MultiplayerLobby : MonoBehaviourPunCallbacks
         CreateRoomPanel.gameObject.SetActive(false);
         InsideRoomPanel.gameObject.SetActive(false);
         ListRoomsPanel.gameObject.SetActive(false);
-        
+        chatPanel.gameObject.SetActive(false);
+
+
         if (panelName == LoginPanel.gameObject.name)
             LoginPanel.gameObject.SetActive(true);
         else if (panelName == SelectionPanel.gameObject.name)
@@ -62,7 +66,8 @@ public class MultiplayerLobby : MonoBehaviourPunCallbacks
             InsideRoomPanel.gameObject.SetActive(true);
         else if (panelName == ListRoomsPanel.gameObject.name)
             ListRoomsPanel.gameObject.SetActive(true);
-        
+        else if (panelName == chatPanel.gameObject.name)
+            chatPanel.gameObject.SetActive(true);
             
     }
     public void LoginButtonClicked()
@@ -118,6 +123,11 @@ public class MultiplayerLobby : MonoBehaviourPunCallbacks
     // ReSharper disable Unity.PerformanceAnalysis
     public override void OnJoinedRoom()
     {
+        var authencicationValues = new Photon.Chat.AuthenticationValues(PhotonNetwork.LocalPlayer.NickName);
+        chat.userName = PhotonNetwork.LocalPlayer.NickName;
+        chat.ChatClient.Connect(PhotonNetwork.PhotonServerSettings.AppSettings.AppIdChat, "1.0", authencicationValues);
+
+
         Debug.Log("Room has been joined");
         ActivatePanel("InsideRoom");
         startGameButton.SetActive(PhotonNetwork.IsMasterClient);
@@ -137,6 +147,8 @@ public class MultiplayerLobby : MonoBehaviourPunCallbacks
 
     public override void OnLeftRoom()
     {
+        chat.ChatClient.Disconnect();
+
         Debug.Log("Left Room");
         ActivatePanel("CreateRoom");
         

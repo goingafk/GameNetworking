@@ -1,9 +1,14 @@
 <linker>
 	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="Chat">
+			<method name="SetMesssage"/>
+		</type>
 		<type fullname="MultiplayerLevelManager">
 			<method name="LeaveGame"/>
 		</type>
 		<type fullname="MultiplayerLobby">
+			<method name="ActivatePanel"/>
+			<method name="ActivatePanel"/>
 			<method name="ActivatePanel"/>
 			<method name="ActivatePanel"/>
 			<method name="CreateRoom"/>

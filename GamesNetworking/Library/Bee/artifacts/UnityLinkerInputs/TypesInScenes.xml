@@ -8,6 +8,7 @@
 		<type fullname="AudioManager" preserve="nothing"/>
 		<type fullname="BulletController" preserve="nothing"/>
 		<type fullname="CameraTracking" preserve="nothing"/>
+		<type fullname="Chat" preserve="nothing"/>
 		<type fullname="Enemy" preserve="nothing"/>
 		<type fullname="GameManager" preserve="nothing"/>
 		<type fullname="LevelManagerScript" preserve="nothing"/>
@@ -42,7 +43,11 @@
 	<assembly fullname="PhotonUnityNetworking">
 		<type fullname="Photon.Pun.ServerSettings" preserve="nothing"/>
 	</assembly>
+	<assembly fullname="PlayFab">
+		<type fullname="PlayFabSharedSettings" preserve="nothing"/>
+	</assembly>
 	<assembly fullname="Unity.InputSystem">
+		<type fullname="UnityEngine.InputSystem.Editor.InputActionEditorWindow" preserve="nothing"/>
 		<type fullname="UnityEngine.InputSystem.InputActionAsset" preserve="nothing"/>
 		<type fullname="UnityEngine.InputSystem.InputSettings" preserve="nothing"/>
 		<type fullname="UnityEngine.InputSystem.InputSystemObject" preserve="nothing"/>
@@ -121,6 +126,7 @@
 		<type fullname="UnityEngine.EventSystems.StandaloneInputModule" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Button" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.CanvasScaler" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.ContentSizeFitter" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.GraphicRaycaster" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.HorizontalLayoutGroup" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Image" preserve="nothing"/>

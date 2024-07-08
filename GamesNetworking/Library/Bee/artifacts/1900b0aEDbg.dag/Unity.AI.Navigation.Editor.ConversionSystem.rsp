@@ -109,7 +109,6 @@
 -define:ENABLE_UNITY_COLLECTIONS_CHECKS
 -define:ENABLE_BURST_AOT
 -define:UNITY_TEAM_LICENSE
--define:UNITY_PRO_LICENSE
 -define:ENABLE_CUSTOM_RENDER_TEXTURE
 -define:ENABLE_DIRECTOR
 -define:ENABLE_LOCALIZATION
@@ -129,6 +128,12 @@
 -define:UNITY_EDITOR_ONLY_COMPILATION
 -r:"Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll"
 -r:"Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll"
+-r:"Assets/PlayFabEditorExtensions/Editor/Resources/Microsoft.Identity.Client.dll"
+-r:"Assets/PlayFabEditorExtensions/Editor/Resources/Microsoft.IdentityModel.Clients.ActiveDirectory.dll"
+-r:"Assets/PlayFabEditorExtensions/Editor/Resources/Microsoft.IdentityModel.JsonWebTokens.dll"
+-r:"Assets/PlayFabEditorExtensions/Editor/Resources/Microsoft.IdentityModel.Logging.dll"
+-r:"Assets/PlayFabEditorExtensions/Editor/Resources/Microsoft.IdentityModel.Tokens.dll"
+-r:"Assets/PlayFabEditorExtensions/Editor/Resources/System.IdentityModel.Tokens.Jwt.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2023.1.8f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2023.1.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2023.1.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
@@ -365,15 +370,15 @@
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEngine.UI.ref.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2023.1.8f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2023.1.8f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
-"Library/PackageCache/com.unity.ai.navigation@1.1.4/Editor/ConversionSystem/AssemblyInfo.cs"
-"Library/PackageCache/com.unity.ai.navigation@1.1.4/Editor/ConversionSystem/ConverterItemDescriptor.cs"
-"Library/PackageCache/com.unity.ai.navigation@1.1.4/Editor/ConversionSystem/ConverterItemInfo.cs"
-"Library/PackageCache/com.unity.ai.navigation@1.1.4/Editor/ConversionSystem/EditorStyles.cs"
-"Library/PackageCache/com.unity.ai.navigation@1.1.4/Editor/ConversionSystem/InitializeConverterContext.cs"
-"Library/PackageCache/com.unity.ai.navigation@1.1.4/Editor/ConversionSystem/RunItemContext.cs"
-"Library/PackageCache/com.unity.ai.navigation@1.1.4/Editor/ConversionSystem/SystemConverter.cs"
-"Library/PackageCache/com.unity.ai.navigation@1.1.4/Editor/ConversionSystem/SystemConverterContainer.cs"
-"Library/PackageCache/com.unity.ai.navigation@1.1.4/Editor/ConversionSystem/SystemConvertersEditor.cs"
+"Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/AssemblyInfo.cs"
+"Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/ConverterItemDescriptor.cs"
+"Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/ConverterItemInfo.cs"
+"Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/EditorStyles.cs"
+"Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/InitializeConverterContext.cs"
+"Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/RunItemContext.cs"
+"Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/SystemConverter.cs"
+"Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/SystemConverterContainer.cs"
+"Library/PackageCache/com.unity.ai.navigation@1.1.5/Editor/ConversionSystem/SystemConvertersEditor.cs"
 -langversion:9.0
 
 /deterministic

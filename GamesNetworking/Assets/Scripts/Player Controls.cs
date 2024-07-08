@@ -141,6 +141,12 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private List<IGameplayActions> m_GameplayActionsCallbackInterfaces = new List<IGameplayActions>();
     private readonly InputAction m_Gameplay_Shoot;
     private readonly InputAction m_Gameplay_Move;
+
+    public PlayerControls(InputActionAsset asset)
+    {
+        this.asset = asset;
+    }
+
     public struct GameplayActions
     {
         private @PlayerControls m_Wrapper;
